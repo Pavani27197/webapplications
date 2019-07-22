@@ -1,0 +1,29 @@
+<!DOCTYPE html>  
+<html>  
+   <head><title>student data</title></head>  
+   <body>   
+      <h3>student list</h3>  
+      <table border="2" padding = "5">  
+         <th>  
+            <tr>  
+               <th>Name</th>  
+               <th>rollno</th>  
+               <th>branch</th>  
+               <th>college</th>  
+            </tr>  
+         </th>  
+  
+         <tbody>  
+            {% for student in students %}  
+               <tr>  
+                  <td>{{n}}</td>  
+                  <td>{{ei}}</td>  
+                  <td>{{rn}}</td>  
+                  <td>{{ca}}</td>  
+               </tr>    
+         </tbody>  
+      </table>  
+      <br><br>  
+      <a href="{{ url_for('addstudent') }}">add new student</a>  
+   </body>  
+</html>

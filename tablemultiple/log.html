@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+</head>
+<body>
+<center>
+<h1>Student Registration Data</h1>
+<table border="1">
+<tr bgcolor="#bg-warning">
+<th>Name</th>
+<th>EmailId</th>
+<th>Rollnumber</th>
+<th>Collegename</th>
+</tr>
+<tbody>
+	{% for row in data %}
+		<tr bgcolor="#ddd">
+				<td>{{row.Name}}</td>
+			<td>{{row.EmailId}}</td>
+		<td>{{row.Rollnumber}}</td>
+	<td>{{row.Collegename}}</td>
+</tr>
+	{% endfor %}
+</tbody>
+</table>
+</center>
+</body>
+</html>

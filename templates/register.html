@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>register Form</title>
+</head>
+<body>
+	<form action="{{url_for('register')}}" method="POST">
+		<label>Name</label><input type="text" name="fname">
+		<br>
+		<label>EmailId</label><input type="email" name="emailid">
+		<br>
+		<label>Rollnumber</label><input type="text" name="rollnumber">
+		<br>
+		<label>Collegename</label><input type="text" name="collegename">
+		<br>
+		<button type="submit">Submit</button>
+	</form>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>student details</title>
+</head>
+<body>
+<center>
+
+<table border="1">
+	<caption>Student Details</caption>
+<tr bgcolor="#bg-warning">
+<th>Id</th>
+<th>Name</th>
+<th>Rollnumber</th>
+<th>EmailId</th>
+<th>Phone No</th>
+<th>Branch</th>
+</tr>
+	{% for record in data %}
+		<tr bgcolor="#ddd">
+				<td>{{record.s_name}}</td>
+				<td>{{record.roll_no}}</td>
+				<td>{{record.mail_id}}</td>
+				<td>{{record.phone_no}}</td>
+				<td>{{record.s_branch}}</td>
+		</tr>
+	{% endfor %}
+</table>
+</center>
+</body>
+</html>
